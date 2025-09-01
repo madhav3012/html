@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student form</title>
+</head>
+<body bgcolor="#F5F4F5">
+    <table border="5   " align="center" cellpadding="10">
+        <tr>
+            <td colspan="2" align="center">
+                <h2>Student Registration</h2>
+            </td>
+        </tr>
+        <form>
+        <tr>
+            <td>Full Name:</td>
+            <td><input type="text" name="fullname"></td>
+        </tr>
+        <tr>
+            <td>Email Address:</td>
+            <td><input type="email" name="email"></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input type="password" name="password"></td>
+        </tr>
+        <tr>
+            <td>Gender:</td>
+            <td>
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+                <input type="radio" name="gender" value="other"> Other
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Date of Birth:</td>
+            <td><input type="date" name="dob"></td>
+        </tr>
+        <tr>
+            <td>Department:</td>
+            <td>
+                <select name="department">
+                    <option value="it">IT</option>
+                    <option value="chemical">computering</option>
+                    <option value="ece">chemical</option>
+                    <option value="mech">Mechanical</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Upload Profile:</td>
+            <td><input type="file" name="profile"></td>
+        </tr>
+        <tr>
+            <td>Address:</td>
+            <td><textarea name="address" rows="4" cols="40"></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="checkbox" name="terms"> I agree to the terms
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="Submit">
+            </td>
+        </tr>
+        </form>
+    </table>
+</body>
+</html>

@@ -1,0 +1,221 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  /* 🌈 Soft Pastel Gradient Background */
+  background: linear-gradient(120deg, #fbc2eb, #a6c1ee, #d4fc79, #96e6a1);
+  background-size: 400% 400%;
+  animation: pastelShift 20s ease infinite;
+  color: #2c3e50;
+  min-height: 100vh;
+}
+
+@keyframes pastelShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Sidebar */
+aside {
+  width: 220px;
+  background: rgba(255,255,255,0.5);
+  backdrop-filter: blur(15px);
+  color: #2c3e50;
+  min-height: 100vh;
+  padding: 30px 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-shadow: 3px 0 15px rgba(0,0,0,0.1);
+  border-right: 2px solid rgba(255,255,255,0.6);
+}
+
+aside h2 {
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #6a11cb;
+  letter-spacing: 2px;
+}
+
+aside ul {
+  list-style: none;
+}
+
+aside ul li {
+  margin: 18px 0;
+}
+
+aside ul li a {
+  color: #2c3e50;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 10px 12px;
+  display: block;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+aside ul li a:hover {
+  background: linear-gradient(90deg, #ffecd2, #fcb69f);
+  box-shadow: 0 0 12px rgba(255, 180, 200, 0.6);
+  transform: translateX(6px);
+}
+
+/* Main content */
+main {
+  margin-left: 240px;
+  padding: 40px;
+  flex: 1;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-family: 'Raleway', sans-serif;
+  background: linear-gradient(90deg, #a1c4fd, #c2e9fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 2px;
+}
+
+header p {
+  color: #555;
+  font-size: 1.2rem;
+}
+
+/* Card Section */
+.card {
+  background: rgba(255,255,255,0.6);
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 40px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.2);
+}
+
+/* Section Headings */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-family: 'Raleway', sans-serif;
+  color: #444;
+  text-align: center;
+}
+
+/* Skills Progress Bars */
+.skill {
+  margin: 15px 0;
+}
+
+.progress {
+  background: rgba(0,0,0,0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  height: 12px;
+}
+
+.progress span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+  border-radius: 20px;
+  box-shadow: 0 0 12px rgba(250,150,150,0.6);
+}
+
+/* Gallery */
+figure {
+  text-align: center;
+}
+
+figure img {
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+figure img:hover {
+  transform: scale(1.07) rotate(-2deg);
+  box-shadow: 0 0 20px rgba(255,182,193,0.6);
+}
+
+figcaption {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* Contact Form */
+form {
+  max-width: 500px;
+  margin: auto;
+  background: rgba(255,255,255,0.7);
+  padding: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  outline: none;
+  background: rgba(255,255,255,0.9);
+  color: #333;
+  transition: 0.3s;
+}
+
+form input:focus, form textarea:focus {
+  box-shadow: 0 0 10px rgba(166,193,238,0.7);
+}
+
+form input[type="submit"] {
+  background: linear-gradient(90deg, #89f7fe, #66a6ff);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+form input[type="submit"]:hover {
+  background: linear-gradient(90deg, #fbc2eb, #a6c1ee);
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  font-size: 0.9rem;
+  background: rgba(255,255,255,0.6);
+  border-radius: 12px;
+}
